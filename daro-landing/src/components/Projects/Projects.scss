@@ -1,0 +1,206 @@
+@import "../../styles";
+
+.projects {
+  @include sectionSizes;
+  position: relative;
+  margin-top: 40px;
+  height: 2190px;
+  padding: 0;
+
+  .floated-bg {
+    position: sticky;
+    width: 100vw;
+    height: 730px;
+    background: $daroYellow;
+    overflow-x: hidden;
+    -webkit-box-shadow: 4px 4px 17px 1px rgba(6, 72, 236, 0.25);
+    box-shadow: 4px 4px 17px 1px rgba(6, 72, 236, 0.25);
+  }
+
+  .elements {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+
+    .scrolling-text {
+      width: 100%;
+      overflow: hidden;
+      margin-top: 30px;
+      .marque {
+        text-align: center;
+        margin-top: 50px;
+        font-size: 67px;
+        font-weight: 700;
+        text-transform: uppercase;
+        width: auto;
+        white-space: nowrap;
+        margin: 0 auto;
+        position: absolute;
+        display: inline-block;
+        transform: translateX(100%);
+        white-space: nowrap;
+        overflow: hidden;
+        animation: marquee 20s linear infinite;
+
+        .content {
+          display: inline-block;
+
+          span {
+            color: $daroBlue;
+          }
+        }
+      }
+
+      @keyframes marquee {
+        0% {
+          transform: translate3d(0, 0, 0);
+        }
+        100% {
+          transform: translate3d(-50%, 0, 0);
+        }
+      }
+    }
+
+    .container {
+      margin-top: 90px;
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      height: 100%;
+
+      .sides {
+        width: 50%;
+        margin-top: 60px;
+      }
+
+      .project-grid {
+        display: flex;
+        flex-direction: column;
+
+        .blured {
+          filter: blur(8px);
+        }
+
+        .project {
+          background-size: cover;
+          background-position: center center;
+          -webkit-box-shadow: 4px 4px 10px -1px rgba(0, 0, 0, 0.2);
+          box-shadow: 4px 4px 10px -1px rgba(0, 0, 0, 0.2);
+          height: 320px;
+          margin-bottom: 15px;
+
+          .a {
+            opacity: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            color: $daroWhite;
+            transition: 0.3s all;
+            backdrop-filter: blur(5px);
+            font-weight: 800;
+
+            h3 {
+              @include font3;
+              font-weight: 700;
+              text-transform: uppercase;
+            }
+
+            .services {
+              @include font5;
+              font-weight: 300;
+              width: 300px;
+              text-align: center;
+            }
+          }
+
+          .a:hover {
+            opacity: 1;
+            transition: 0.3s all;
+          }
+        }
+
+        .dulcinella {
+          grid-column: 1 / span 2;
+        }
+
+        .inamstro {
+          grid-column: 3 / span 2;
+        }
+      }
+    }
+
+    .right {
+      padding: 200px 60px;
+      height: 90%;
+      overflow: unset;
+
+      .link {
+        text-decoration: none;
+        position: sticky !important;
+        top: 300px;
+        text-align: center;
+
+        span {
+          @include font1;
+          color: $darkFont;
+          text-transform: uppercase;
+          text-align: center;
+          font-weight: 700;
+          line-height: 70px;
+
+          .blue {
+            color: $daroBlue;
+            text-decoration: none;
+            position: relative;
+            text-transform: uppercase;
+          }
+
+          .blue:after {
+            content: " ";
+            position: absolute;
+            width: 100%;
+            transform: scaleX(0);
+            height: 3px;
+            bottom: 0;
+            left: 0;
+            background-color: $daroBlue;
+            transform-origin: bottom right;
+            transition: transform 0.25s ease-out;
+          }
+
+          .blue:hover:after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .projects {
+    .elements {
+      padding: 0 80px !important;
+      .container {
+        .right {
+          .link {
+            position: sticky !important;
+            span {
+              font-size: 37px;
+              line-height: 50px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

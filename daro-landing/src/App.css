@@ -1,0 +1,30 @@
+.App {
+  position: relative;
+}
+
+.App .animation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #f9f9f9;
+  z-index: 1;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+}
+
+.App .animation .animation-container {
+  margin: 100px auto;
+  width: 600px;
+  height: 600px;
+  top: 260px;
+  right: 120px;
+}
+
+.App .disappearing {
+  display: none;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+}
+/*# sourceMappingURL=App.css.map */

@@ -1,0 +1,105 @@
+.insta-stories {
+  padding: 0 120px;
+  height: 730px;
+  min-height: 730px;
+  width: 100vw;
+  width: 100vw;
+  position: relative;
+  padding: 0;
+}
+
+.insta-stories .layers {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.insta-stories .decoration {
+  position: relative;
+}
+
+.insta-stories .decoration .floated-bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 400px;
+  background-color: #f2f442;
+}
+
+.insta-stories .elements {
+  width: 100%;
+  height: 100%;
+  padding: 0 120px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.insta-stories .elements .sides {
+  margin: 0;
+}
+
+.insta-stories .elements .left-side {
+  margin-left: 30px;
+}
+
+.insta-stories .elements .left-side .posts {
+  width: 100%;
+  height: 470px;
+  margin-top: 200px;
+  background-color: #f9f9f9;
+  -webkit-box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.45);
+  box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.45);
+}
+
+.insta-stories .elements .right-side h4 {
+  font-size: 50px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #001446;
+  font-weight: 700;
+  margin-top: 200px;
+}
+
+.insta-stories .elements .right-side h4 span {
+  color: #0648ec;
+  position: relative;
+}
+
+.insta-stories .elements .right-side h4 span:after {
+  content: " ";
+  position: absolute;
+  width: 100%;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  height: 4px;
+  bottom: 0;
+  left: 0;
+  background-color: #0648ec;
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+  -webkit-transition: -webkit-transform 0.25s ease-out;
+  transition: -webkit-transform 0.25s ease-out;
+  transition: transform 0.25s ease-out;
+  transition: transform 0.25s ease-out, -webkit-transform 0.25s ease-out;
+}
+
+.insta-stories .elements .right-side h4 span:hover:after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+}
+
+.invisible {
+  display: none;
+}
+/*# sourceMappingURL=InstaStories.css.map */

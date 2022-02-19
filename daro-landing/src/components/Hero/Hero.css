@@ -1,0 +1,276 @@
+.Hero {
+  padding: 0 120px;
+  height: 730px;
+  min-height: 730px;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  z-index: 1000;
+}
+
+.Hero .hero-top {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  height: 63%;
+  width: 100%;
+}
+
+.Hero .hero-top .left-side {
+  padding-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 400px;
+}
+
+.Hero .hero-top .left-side h1 {
+  text-transform: uppercase;
+  font-size: 50px;
+  font-weight: 500;
+  color: #001446;
+  font-weight: 700;
+}
+
+.Hero .hero-top .left-side h1 span {
+  color: #0648ec;
+}
+
+.Hero .hero-top .left-side p {
+  font-size: 28px;
+  font-weight: 500;
+  color: #6c6c6c;
+}
+
+.Hero .hero-top .left-side button {
+  width: 300px;
+  height: 80px;
+  font-size: 37px;
+  font-weight: 500;
+  background: #0648ec;
+  color: #f9f9f9;
+  border: none;
+  text-transform: uppercase;
+  -webkit-box-shadow: 8px 8px 0px 0px #f2f442, 8px 8px 8px 0px rgba(0, 0, 0, 0.45);
+  box-shadow: 8px 8px 0px 0px #f2f442, 8px 8px 8px 0px rgba(0, 0, 0, 0.45);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.Hero .hero-top .left-side button:hover {
+  color: #0648ec;
+  background: #f9f9f9;
+  -webkit-box-shadow: 0px 0px 0px 0px #f2f442, 4px 4px 8px 0px rgba(0, 0, 0, 0.45);
+  box-shadow: 0px 0px 0px 0px #f2f442, 4px 4px 8px 0px rgba(0, 0, 0, 0.45);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.Hero .hero-top .right-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.Hero .hero-top .right-side .header-anim {
+  width: 400px;
+  margin-top: 50px;
+}
+
+.Hero .hero-bot {
+  width: 100%;
+  height: 33%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.Hero .hero-bot .translated {
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  width: 19%;
+  height: 100%;
+}
+
+.Hero .hero-bot .translated .service {
+  height: 100%;
+  color: #001446;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 20px;
+  background: #f9f9f9;
+  -webkit-box-shadow: 4px 4px 17px 1px rgba(6, 72, 236, 0.25);
+  box-shadow: 4px 4px 17px 1px rgba(6, 72, 236, 0.25);
+}
+
+.Hero .hero-bot .translated .service .icon-container {
+  min-width: 100px;
+  min-height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 100px;
+  margin: 20px 0;
+}
+
+.Hero .hero-bot .translated .service h3 {
+  font-size: 21px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+}
+
+.Hero .hero-bot .translated:hover {
+  -webkit-transform: translateY(-15px);
+          transform: translateY(-15px);
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+<<<<<<< HEAD
+
+@media only screen and (max-width: 1300px) {
+  .Hero {
+    padding: 0 80px;
+    min-height: 600px;
+  }
+  .Hero .hero-top {
+    height: 50%;
+  }
+  .Hero .hero-top .right-side .header-anim {
+    width: 300px;
+    margin-top: 0;
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+  .Hero .hero-top .left-side {
+    height: 300px;
+  }
+  .Hero .hero-top .left-side h1 {
+    font-size: 37px;
+    font-weight: 500;
+    font-weight: 700;
+  }
+  .Hero .hero-bot {
+    width: 100vw;
+    height: 33%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[5];
+        grid-template-columns: repeat(5, 1fr);
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    padding: 0;
+  }
+  .Hero .hero-bot .translated {
+    -webkit-transition: 0.3s all;
+    transition: 0.3s all;
+    width: auto;
+  }
+  .Hero .hero-bot .translated .service {
+    color: #001446;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+    height: 170px;
+    margin: 0;
+    padding: 20px;
+    background: #f9f9f9;
+    -webkit-box-shadow: 4px 4px 17px 1px rgba(6, 72, 236, 0.25);
+    box-shadow: 4px 4px 17px 1px rgba(6, 72, 236, 0.25);
+  }
+  .Hero .hero-bot .translated .service .icon-container {
+    min-width: 140px;
+    min-height: 140px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border-radius: 100px;
+    margin: 0;
+  }
+  .Hero .hero-bot .translated .service h3 {
+    font-size: 16px !important;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 0;
+  }
+  .Hero .hero-bot .translated:hover {
+    -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
+    -webkit-transition: 0.3s all;
+    transition: 0.3s all;
+  }
+}
+=======
+>>>>>>> parent of 140d17d (ss)
+/*# sourceMappingURL=Hero.css.map */

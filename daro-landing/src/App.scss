@@ -1,0 +1,27 @@
+.App {
+  position: relative;
+
+  .animation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #f9f9f9;
+    z-index: 1;
+    transition: 1s ease-in-out;
+
+    .animation-container {
+      margin: 100px auto;
+      width: 600px;
+      height: 600px;
+      top: 260px;
+      right: 120px;
+    }
+  }
+
+  .disappearing {
+    display: none;
+    transition: 1s ease-in-out;
+  }
+}

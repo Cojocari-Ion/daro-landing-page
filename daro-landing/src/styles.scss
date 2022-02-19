@@ -1,0 +1,77 @@
+//COLORS
+$daroBlue: #0648ec;
+$daroWhite: #f9f9f9;
+$daroYellow: #f2f442;
+$daroGreen: #71c449;
+$darkFont: #001446;
+$grayColor: #dadada;
+
+//FONTS
+
+@mixin font0 {
+  font-size: 67px;
+  font-weight: 700;
+}
+
+@mixin font1 {
+  font-size: 50px;
+  font-weight: 500;
+}
+
+@mixin font2 {
+  font-size: 37px;
+  font-weight: 500;
+}
+
+@mixin font3 {
+  font-size: 28px;
+  font-weight: 500;
+}
+
+@mixin font4 {
+  font-size: 21px;
+  font-weight: 500;
+}
+
+@mixin font5 {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+//button
+@mixin button {
+  background: $daroBlue;
+  color: $daroWhite;
+  border: none;
+  text-transform: uppercase;
+  -webkit-box-shadow: 8px 8px 0px 0px #f2f442,
+    8px 8px 8px 0px rgba(0, 0, 0, 0.45);
+  box-shadow: 8px 8px 0px 0px #f2f442, 8px 8px 8px 0px rgba(0, 0, 0, 0.45);
+  transition: 0.3s ease-in-out;
+}
+
+@mixin buttonHovered {
+  color: $daroBlue;
+  background: $daroWhite;
+  -webkit-box-shadow: 0px 0px 0px 0px #f2f442,
+    4px 4px 8px 0px rgba(0, 0, 0, 0.45);
+  box-shadow: 0px 0px 0px 0px #f2f442, 4px 4px 8px 0px rgba(0, 0, 0, 0.45);
+  transition: 0.3s ease-in-out;
+}
+
+// paddings & sizes
+@mixin sectionSizes {
+  padding: $padding1;
+  height: 730px;
+  min-height: 730px;
+  width: 100vw;
+}
+//SHADOWS
+@mixin shadowDark {
+  -webkit-box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.45);
+  box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.45);
+}
+
+$padding1: 0 120px;
+
+$floats: 120px;

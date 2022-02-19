@@ -1,0 +1,155 @@
+@import "../../styles";
+
+.whyUs {
+  position: relative;
+
+  .clients-container {
+    width: 100vw;
+    padding: 0 120px;
+  }
+
+  .floated-bg {
+    position: absolute;
+    width: 100vw;
+    height: 600px;
+    background: $daroYellow;
+    top: 30px;
+    left: 120px;
+  }
+
+  .elements {
+    padding: 0 120px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+
+    h2 {
+      @include font2;
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: 700;
+
+      span {
+        color: $daroBlue;
+      }
+    }
+
+    .divider {
+      height: 6px;
+      width: 78px;
+      background-color: $daroBlue;
+      margin: 30px auto;
+    }
+
+    .floated-right {
+      transform: translateX(-960px);
+      transition: 2s ease-in-out;
+    }
+
+    .floated-left {
+      transform: translateX(-13px);
+      transition: 2s ease-in-out;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: row;
+
+      .motiv {
+        position: relative;
+        min-width: 433px;
+        max-width: 433px;
+        height: 256px;
+        margin-top: 10px;
+        margin-right: 20px;
+
+        .hover-motion {
+          background: $daroWhite;
+          min-width: 100%;
+          min-height: 100%;
+          padding: 30px;
+          @include shadowDark;
+          transition: ease-in-out 0.3s;
+
+          span {
+            position: absolute;
+            font-size: 266px;
+            opacity: 0.04;
+            font-weight: 800;
+            bottom: 0;
+            left: 0;
+            margin: 0;
+            padding: 0;
+            line-height: 0.75;
+            cursor: default;
+          }
+
+          h3 {
+            @include font3;
+            font-weight: 700;
+            color: $daroBlue;
+            text-transform: uppercase;
+          }
+
+          p {
+            font-size: 15;
+            font-weight: 500;
+            color: $darkFont;
+          }
+        }
+      }
+
+      .motiv:hover {
+        transition: ease-in-out 0.3s;
+        transform: translateY(-100px);
+      }
+    }
+  }
+
+  .directions {
+    position: absolute;
+    top: 300px;
+    width: 200px;
+    height: 400px;
+  }
+
+  .right {
+    right: 0;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .whyUs {
+    padding: 0 !important;
+
+    .floated-bg {
+      left: 80px !important;
+    }
+
+    .elements {
+      padding: 0 !important;
+    }
+
+    .clients-container {
+      width: 100vw !important;
+      padding: 0 80px !important;
+    }
+
+    .elements {
+      padding: 0 !important;
+
+      .container {
+        overflow-x: scroll;
+        overflow-y: hidden;
+        min-width: 1300px !important;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+
+      .container::-webkit-scrollbar {
+        display: none;
+      }
+    }
+  }
+}

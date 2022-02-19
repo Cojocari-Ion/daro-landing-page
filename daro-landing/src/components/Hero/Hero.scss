@@ -1,0 +1,200 @@
+@import "../../styles";
+
+.Hero {
+  @include sectionSizes;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 1000;
+
+  .hero-top {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    height: 63%;
+    width: 100%;
+
+    .left-side {
+      padding-top: 100px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 400px;
+
+      h1 {
+        text-transform: uppercase;
+        @include font1;
+        color: $darkFont;
+        font-weight: 700;
+
+        span {
+          color: $daroBlue;
+        }
+      }
+
+      p {
+        @include font3;
+        color: #6c6c6c;
+      }
+
+      button {
+        width: 300px;
+        height: 80px;
+        @include font2;
+        @include button;
+      }
+
+      button:hover {
+        @include buttonHovered;
+      }
+    }
+
+    .right-side {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: flex-end;
+
+      .header-anim {
+        width: 400px;
+        margin-top: 50px;
+      }
+    }
+  }
+
+  .hero-bot {
+    width: 100%;
+    height: 33%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .translated {
+      transition: 0.3s all;
+      width: 19%;
+      height: 100%;
+
+      .service {
+        height: 100%;
+        color: $darkFont;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        justify-content: space-around;
+        padding: 20px;
+        background: #f9f9f9;
+        -webkit-box-shadow: 4px 4px 17px 1px rgba(6, 72, 236, 0.25);
+        box-shadow: 4px 4px 17px 1px rgba(6, 72, 236, 0.25);
+
+        .icon-container {
+          min-width: 100px;
+          min-height: 100px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 100px;
+          margin: 20px 0;
+        }
+
+        h3 {
+          @include font4;
+          text-transform: uppercase;
+          text-align: center;
+          margin: 0;
+        }
+      }
+    }
+
+    .translated:hover {
+      transform: translateY(-15px);
+      transition: 0.3s all;
+    }
+  }
+}
+<<<<<<< HEAD
+
+/*
+@media only screen and (max-width: 1300px) {
+  .Hero {
+    padding: 0 80px;
+    min-height: 600px;
+
+    .hero-top {
+      height: 50%;
+
+      .right-side {
+        .header-anim {
+          width: 300px;
+          margin-top: 0;
+          transform: translateX(10px);
+        }
+      }
+
+      .left-side {
+        height: 300px;
+        h1 {
+          @include font2;
+          font-weight: 700;
+        }
+      }
+    }
+
+    .hero-bot {
+      width: 100vw;
+      height: 33%;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: 1fr;
+      grid-column-gap: 0px;
+      grid-row-gap: 0px;
+      padding: 0;
+
+      .translated {
+        transition: 0.3s all;
+        width: auto;
+
+        .service {
+          color: $darkFont;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-between;
+          width: 100%;
+          height: 170px;
+          margin: 0;
+          padding: 20px;
+          background: #f9f9f9;
+          -webkit-box-shadow: 4px 4px 17px 1px rgba(6, 72, 236, 0.25);
+          box-shadow: 4px 4px 17px 1px rgba(6, 72, 236, 0.25);
+
+          .icon-container {
+            min-width: 140px;
+            min-height: 140px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 100px;
+            margin: 0;
+          }
+
+          h3 {
+            font-size: 16px !important;
+            text-transform: uppercase;
+            text-align: center;
+            margin-top: 0;
+          }
+        }
+      }
+
+      .translated:hover {
+        transform: translateY(-15px);
+        transition: 0.3s all;
+      }
+    }
+  }
+}
+=======
+>>>>>>> parent of 140d17d (ss)

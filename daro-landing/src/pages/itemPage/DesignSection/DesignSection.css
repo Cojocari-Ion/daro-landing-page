@@ -1,0 +1,127 @@
+.design-section {
+  padding: 0 120px;
+  height: 730px;
+  min-height: 730px;
+  width: 100vw;
+  width: 100vw;
+  position: relative;
+  padding: 0;
+}
+
+.design-section .layers {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.design-section .decoration {
+  position: relative;
+}
+
+.design-section .decoration .floated-bg {
+  position: absolute;
+  top: 0;
+  left: 120px;
+  width: 100%;
+  height: 400px;
+  background-color: #0648ec;
+}
+
+.design-section .decoration span {
+  position: absolute;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 800;
+  left: 0;
+  top: 0;
+  opacity: 0.1;
+  font-size: 120px;
+  display: inline;
+  width: 100%;
+}
+
+.design-section .decoration h4 {
+  font-size: 67px;
+  font-weight: 700;
+  top: 45px;
+  left: 0;
+  text-align: center;
+  text-transform: uppercase;
+  color: #f9f9f9;
+  position: absolute;
+  width: 100%;
+}
+
+.design-section .elements {
+  width: 100%;
+  height: 100%;
+  padding: 0 120px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.design-section .elements .sides {
+  margin: 0;
+}
+
+.design-section .elements .left-side .posts {
+  width: 100%;
+  height: 470px;
+  margin-top: 200px;
+  background-color: #f9f9f9;
+  -webkit-box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.45);
+  box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.45);
+}
+
+.design-section .elements .right-side h4 {
+  text-align: end;
+  font-size: 50px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #f9f9f9;
+  font-weight: 700;
+  margin-top: 200px;
+}
+
+.design-section .elements .right-side h4 span {
+  color: #f2f442;
+  position: relative;
+}
+
+.design-section .elements .right-side h4 span:after {
+  content: " ";
+  position: absolute;
+  width: 100%;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: #f2f442;
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+  -webkit-transition: -webkit-transform 0.25s ease-out;
+  transition: -webkit-transform 0.25s ease-out;
+  transition: transform 0.25s ease-out;
+  transition: transform 0.25s ease-out, -webkit-transform 0.25s ease-out;
+}
+
+.design-section .elements .right-side h4 span:hover:after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+}
+
+.invisible {
+  display: none;
+}
+/*# sourceMappingURL=DesignSection.css.map */

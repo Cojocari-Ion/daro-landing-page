@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "ItemPage.scss",
+        "../../styles.scss"
+    ],
+    "names": [],
+    "file": "ItemPage.css"
+}

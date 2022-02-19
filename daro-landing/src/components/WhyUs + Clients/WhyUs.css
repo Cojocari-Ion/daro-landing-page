@@ -1,0 +1,163 @@
+.whyUs {
+  position: relative;
+}
+
+.whyUs .clients-container {
+  width: 100vw;
+  padding: 0 120px;
+}
+
+.whyUs .floated-bg {
+  position: absolute;
+  width: 100vw;
+  height: 600px;
+  background: #f2f442;
+  top: 30px;
+  left: 120px;
+}
+
+.whyUs .elements {
+  padding: 0 120px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+}
+
+.whyUs .elements h2 {
+  font-size: 37px;
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.whyUs .elements h2 span {
+  color: #0648ec;
+}
+
+.whyUs .elements .divider {
+  height: 6px;
+  width: 78px;
+  background-color: #0648ec;
+  margin: 30px auto;
+}
+
+.whyUs .elements .floated-right {
+  -webkit-transform: translateX(-960px);
+          transform: translateX(-960px);
+  -webkit-transition: 2s ease-in-out;
+  transition: 2s ease-in-out;
+}
+
+.whyUs .elements .floated-left {
+  -webkit-transform: translateX(-13px);
+          transform: translateX(-13px);
+  -webkit-transition: 2s ease-in-out;
+  transition: 2s ease-in-out;
+}
+
+.whyUs .elements .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.whyUs .elements .container .motiv {
+  position: relative;
+  min-width: 433px;
+  max-width: 433px;
+  height: 256px;
+  margin-top: 10px;
+  margin-right: 20px;
+}
+
+.whyUs .elements .container .motiv .hover-motion {
+  background: #f9f9f9;
+  min-width: 100%;
+  min-height: 100%;
+  padding: 30px;
+  -webkit-box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.45);
+  box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.45);
+  -webkit-transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.3s;
+}
+
+.whyUs .elements .container .motiv .hover-motion span {
+  position: absolute;
+  font-size: 266px;
+  opacity: 0.04;
+  font-weight: 800;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  line-height: 0.75;
+  cursor: default;
+}
+
+.whyUs .elements .container .motiv .hover-motion h3 {
+  font-size: 28px;
+  font-weight: 500;
+  font-weight: 700;
+  color: #0648ec;
+  text-transform: uppercase;
+}
+
+.whyUs .elements .container .motiv .hover-motion p {
+  font-size: 15;
+  font-weight: 500;
+  color: #001446;
+}
+
+.whyUs .elements .container .motiv:hover {
+  -webkit-transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.3s;
+  -webkit-transform: translateY(-100px);
+          transform: translateY(-100px);
+}
+
+.whyUs .directions {
+  position: absolute;
+  top: 300px;
+  width: 200px;
+  height: 400px;
+}
+
+.whyUs .right {
+  right: 0;
+}
+
+@media only screen and (max-width: 1300px) {
+  .whyUs {
+    padding: 0 !important;
+  }
+  .whyUs .floated-bg {
+    left: 80px !important;
+  }
+  .whyUs .elements {
+    padding: 0 !important;
+  }
+  .whyUs .clients-container {
+    width: 100vw !important;
+    padding: 0 80px !important;
+  }
+  .whyUs .elements {
+    padding: 0 !important;
+  }
+  .whyUs .elements .container {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    min-width: 1300px !important;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .whyUs .elements .container::-webkit-scrollbar {
+    display: none;
+  }
+}
+/*# sourceMappingURL=WhyUs.css.map */

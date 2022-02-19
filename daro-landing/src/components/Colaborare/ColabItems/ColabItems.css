@@ -1,0 +1,110 @@
+.colab-items-container {
+  width: 800px;
+  height: 260px;
+  margin: 0 auto;
+}
+
+.colab-items-container .colab-items {
+  display: -ms-grid;
+  display: grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.colab-items-container .colab-items .item {
+  position: relative;
+  border: 3px solid #001446;
+  background-color: #f9f9f96c;
+  -webkit-backdrop-filter: blur(14px);
+          backdrop-filter: blur(14px);
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  position: relative;
+}
+
+.colab-items-container .colab-items .item h4 {
+  position: absolute;
+  font-size: 28px;
+  font-weight: 500;
+  font-weight: 700;
+  text-transform: uppercase;
+  top: 30px;
+  left: 30px;
+}
+
+.colab-items-container .colab-items .item .icon {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+
+.colab-items-container .colab-items .item .white {
+  opacity: 0;
+}
+
+.colab-items-container .colab-items .item:hover {
+  background-color: #0648ec;
+  border: none;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.colab-items-container .colab-items .item:hover h4 {
+  color: #f9f9f9;
+}
+
+.colab-items-container .colab-items .item:hover .colored {
+  opacity: 0;
+}
+
+.colab-items-container .colab-items .item:hover .white {
+  opacity: 1;
+}
+
+.colab-items-container .colab-items .active {
+  background-color: #0648ec;
+  border: none;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.colab-items-container .colab-items .active h4 {
+  color: #f9f9f9;
+}
+
+.colab-items-container .colab-items .active .colored {
+  opacity: 0;
+}
+
+.colab-items-container .colab-items .active .white {
+  opacity: 1;
+}
+
+.colab-items-container .text {
+  padding: 20px;
+  z-index: 100;
+  width: 800px;
+  height: 115px;
+  background-color: #0648ec;
+  margin: 30px auto;
+  -webkit-box-shadow: 8px 8px 0px 0px #f2f442, 8px 8px 8px 0px rgba(0, 0, 0, 0.45);
+  box-shadow: 8px 8px 0px 0px #f2f442, 8px 8px 8px 0px rgba(0, 0, 0, 0.45);
+}
+
+.colab-items-container .text p {
+  margin: 0 auto;
+  font-size: 21px;
+  font-weight: 500;
+  color: #f9f9f9;
+  text-align: center;
+  line-height: 28px;
+}
+/*# sourceMappingURL=ColabItems.css.map */

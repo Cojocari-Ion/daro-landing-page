@@ -1,0 +1,103 @@
+@import "../../../styles";
+
+.colab-items-container {
+  width: 800px;
+  height: 260px;
+  margin: 0 auto;
+
+  .colab-items {
+    display: grid;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+
+    .item {
+      position: relative;
+      border: 3px solid $darkFont;
+      background-color: #f9f9f96c;
+      backdrop-filter: blur(14px);
+      transition: 0.2s ease-in-out;
+      position: relative;
+
+      h4 {
+        position: absolute;
+        @include font3;
+        font-weight: 700;
+        text-transform: uppercase;
+        top: 30px;
+        left: 30px;
+      }
+
+      .icon {
+        position: absolute;
+        top: 10px;
+        right: 20px;
+      }
+
+      .white {
+        opacity: 0;
+      }
+    }
+
+    .item:hover {
+      background-color: $daroBlue;
+      border: none;
+      transition: 0.2s ease-in-out;
+
+      h4 {
+        color: $daroWhite;
+      }
+
+      .colored {
+        opacity: 0;
+      }
+
+      .white {
+        opacity: 1;
+      }
+    }
+
+    .active {
+      background-color: $daroBlue;
+      border: none;
+      transition: 0.2s ease-in-out;
+
+      h4 {
+        color: $daroWhite;
+      }
+
+      .colored {
+        opacity: 0;
+      }
+
+      .white {
+        opacity: 1;
+      }
+    }
+  }
+
+  .text {
+    padding: 20px;
+    z-index: 100;
+    width: 800px;
+    height: 115px;
+    background-color: $daroBlue;
+    margin: 30px auto;
+    -webkit-box-shadow: 8px 8px 0px 0px #f2f442,
+      8px 8px 8px 0px rgba(0, 0, 0, 0.45);
+    box-shadow: 8px 8px 0px 0px #f2f442, 8px 8px 8px 0px rgba(0, 0, 0, 0.45);
+
+    p {
+      margin: 0 auto;
+      @include font4;
+      color: $daroWhite;
+      text-align: center;
+      line-height: 28px;
+    }
+  }
+}

@@ -1,0 +1,141 @@
+.header-section {
+  padding: 0 120px;
+  height: 730px;
+  min-height: 730px;
+  width: 100vw;
+  position: relative;
+}
+
+.header-section .decoration {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.header-section .decoration .flexible-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.header-section .decoration .flexible-container .deco-images {
+  position: absolute;
+}
+
+.header-section .decoration .flexible-container .dotted {
+  top: -150px;
+  right: -200px;
+  opacity: 0.1;
+  -webkit-animation: rotation 140s linear infinite;
+          animation: rotation 140s linear infinite;
+}
+
+@-webkit-keyframes rotation {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotation {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.header-section .decoration .flexible-container .logo {
+  top: 150px;
+  right: 90px;
+}
+
+.header-section .decoration .flexible-container .blured {
+  bottom: -190px;
+  right: -180px;
+  -webkit-transform: rotate(230deg);
+          transform: rotate(230deg);
+}
+
+.header-section .decoration .flexible-container .arrow {
+  top: 250px;
+  left: -10px;
+}
+
+.header-section .decoration .flexible-container .elipse-blue {
+  background-color: #0648ec;
+  width: 67px;
+  height: 67px;
+  border-radius: 40px;
+  right: 500px;
+  top: 10px;
+}
+
+.header-section .elements {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  padding: 0 120px;
+  height: 500px;
+}
+
+.header-section .elements h2 {
+  display: inline-block;
+  width: auto;
+  text-transform: uppercase;
+  font-size: 67px;
+  font-weight: 700;
+  color: #0648ec;
+  position: relative;
+  cursor: default;
+}
+
+.header-section .elements h2:after {
+  content: " ";
+  position: absolute;
+  width: 100%;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  height: 4px;
+  bottom: 0;
+  left: 0;
+  background-color: #0648ec;
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+  -webkit-transition: -webkit-transform 0.25s ease-out;
+  transition: -webkit-transform 0.25s ease-out;
+  transition: transform 0.25s ease-out;
+  transition: transform 0.25s ease-out, -webkit-transform 0.25s ease-out;
+}
+
+.header-section .elements h2:hover:after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+}
+
+.header-section .elements ul {
+  margin: 40px 0;
+}
+
+.header-section .elements ul li {
+  font-size: 28px;
+  font-weight: 500;
+  margin-top: 15px;
+  color: #001446;
+  text-transform: uppercase;
+}
+/*# sourceMappingURL=HeaderSection.css.map */

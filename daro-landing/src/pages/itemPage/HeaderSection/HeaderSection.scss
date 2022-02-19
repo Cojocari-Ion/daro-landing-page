@@ -1,0 +1,117 @@
+@import "../../../styles";
+
+.header-section {
+  @include sectionSizes;
+  position: relative;
+
+  .decoration {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+
+    .flexible-container {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      overflow: hidden;
+
+      .deco-images {
+        position: absolute;
+      }
+
+      .dotted {
+        top: -150px;
+        right: -200px;
+        opacity: 0.1;
+        animation: rotation 140s linear infinite;
+      }
+
+      @keyframes rotation {
+        0% {
+          transform: rotate(0deg);
+        }
+
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      .logo {
+        top: 150px;
+        right: 90px;
+      }
+
+      .blured {
+        bottom: -190px;
+        right: -180px;
+        transform: rotate(230deg);
+      }
+
+      .arrow {
+        top: 250px;
+        left: -10px;
+      }
+
+      .elipse-blue {
+        background-color: $daroBlue;
+        width: 67px;
+        height: 67px;
+        border-radius: 40px;
+        right: 500px;
+        top: 10px;
+      }
+    }
+  }
+
+  .elements {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    padding: $padding1;
+    height: 500px;
+
+    h2 {
+      display: inline-block;
+      width: auto;
+      text-transform: uppercase;
+      font-size: 67px;
+      font-weight: 700;
+      color: $daroBlue;
+      position: relative;
+      cursor: default;
+    }
+
+    h2:after {
+      content: " ";
+      position: absolute;
+      width: 100%;
+      transform: scaleX(0);
+      height: 4px;
+      bottom: 0;
+      left: 0;
+      background-color: $daroBlue;
+      transform-origin: bottom right;
+      transition: transform 0.25s ease-out;
+    }
+
+    h2:hover:after {
+      transform: scaleX(1);
+      transform-origin: bottom left;
+    }
+
+    ul {
+      margin: 40px 0;
+
+      li {
+        @include font3;
+        margin-top: 15px;
+        color: $darkFont;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
